@@ -12,6 +12,8 @@ News and Updates for this Shiny App:
 
 - Added code to error out more graciously. (#7)
 
+- Added link to NEWS file. (#10)
+
 # v1.0.1, 10/12/2017
 
 - Fixed reading in of `.tsv` and `.txt` files.
