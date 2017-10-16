@@ -13,10 +13,12 @@ ui <- fluidPage(
   titlePanel("Basic Data Exploration App"),
   sidebarLayout(
     sidebarPanel(
+      style = "min-height: 80vh; position: relative;",
       width = 3,
       actionButton("mockstudy", "Use sample dataset..."),
       fileInput("inputfile", NULL, buttonLabel = "...or upload a dataset", multiple = FALSE),
-      textOutput("inputfiletext")
+      textOutput("inputfiletext"),
+      tags$a("NEWS file", href = "NEWS.md", target = "_blank", style = "bottom: 1vh; position: absolute;")
     ),
     mainPanel(
       tabsetPanel(
